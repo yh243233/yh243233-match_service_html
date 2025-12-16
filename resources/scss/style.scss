@@ -3,12 +3,36 @@
    ========================== */
 
 /* 基本定義 */
-@use 'variables';
-@use 'breakpoints';
-@use 'mixin';
+@use 'foundation/_variables';
+@use 'foundation/_breakpoints';
+@use 'foundation/_mixin';
 
 /* リセット */
-@use 'reset';
+@use 'foundation/_reset';
+
+// ==========================
+// Layout
+// ==========================
+// @use "layout/header";
+// @use "layout/footer";
+
+// ==========================
+// Component
+// ==========================
+// @use "component/button";
+// @use "component/card";
+
+// ==========================
+// Project
+// ==========================
+
+@use "project/signin";
+@use "project/login";
+
+// ==========================
+// Utility（最後）
+// ==========================
+// @use "resources\scss\utility/spacing";
 
 /* ベーススタイル */
 body {
@@ -573,6 +597,24 @@ body {
 .footer_copy_right{
   margin-top: 32px;
 }
+
+
+// layout/_header.scss
+
+// のちに分割予定
+// .l-header {
+//   padding: 16px 24px;
+
+//   &__logo {
+//     font-weight: bold;
+//   }
+
+//   &__nav {
+//     display: flex;
+//     gap: 16px;
+//   }
+// }
+
 
 // .features3_registration_button{
 //   margin: 0 auto;
