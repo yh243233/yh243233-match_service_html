@@ -1,0 +1,6 @@
+@mixin gradient-bg(
+  $direction: 135deg,
+  $colors...
+) {
+  background: linear-gradient($direction, $colors);
+}

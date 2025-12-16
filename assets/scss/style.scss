@@ -1,0 +1,599 @@
+/* ==========================
+   Import order is critical
+   ========================== */
+
+/* 基本定義 */
+@use 'variables';
+@use 'breakpoints';
+@use 'mixin';
+
+/* リセット */
+@use 'reset';
+
+/* ベーススタイル */
+body {
+  font-family: Arial,system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #ffffff;
+  max-height: 2660px;
+  /* 背景グラデーション */
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #155DFC 0%,
+    #9810FA 50%,
+    #F6339A 100%
+  );
+}
+
+// ヘッダー要素
+.header{
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header_main_wrap{
+  height: 64px;
+  width: 1216px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_right_wrap{
+  height: 32px;
+  width: 90px;
+  overflow: hidden;
+  float: left;
+}
+
+.header_right_wrap{
+  height: 32px;
+  width: 90px;
+  overflow: hidden;
+}
+
+.header_logo{
+  background-color: #ffffff;
+  color: #155DFC;
+  display: block;
+  height: 32px;
+  width: 32px;
+  text-align: center;
+  border-radius: 10px;
+  float: left;
+  // 下は応急処置：良い方法が見つかり次第修正
+  padding-top: 3px;
+  padding-right: 1px;
+}
+
+.header_title{
+  float: left;
+  // 下は応急処置：良い方法が見つかり次第修正
+  margin-top: 3px;
+  margin-left: 4px;
+}
+
+.header_login{
+  margin-right: 8px;
+}
+
+.header_registration{
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: #155DFC;
+  padding: 8px 19px;
+}
+
+// ヒーローバナー
+
+.hero{
+  margin: 80px 322px 96px;
+}
+
+.hero_phrase_wrap{
+  height: 40px;
+  width: 339px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 335px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 2px 2px 2px gray;
+   // 下は応急処置：良い方法が見つかり次第修正
+  padding-top: 8px;
+}
+
+// .hero_main_text_wrap{
+
+// }
+
+.hero_main_text_1{
+  font-size: 72px;
+  text-align: center;
+  margin: 25px 242px 0px;
+}
+
+.hero_main_text_2{
+  position: relative;
+  top: -20px;
+  font-size: 72px;
+  text-align: center;
+  margin: -10px 415px 0px;
+  background: linear-gradient(
+    135deg,
+    #FCD34D 0%,
+    #F9A8D4 50%,
+    #D8B4FE 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero_sub_text{
+  height: 216px;
+  width: 1261px;
+}
+
+.hero_sub_text_1{
+  text-align: center;
+  margin: 0 auto;
+  font-size: 24px;
+}
+
+.hero_sub_text_2{
+  text-align: center;
+  margin: 0 auto;
+  font-size: 24px;
+}
+
+.hero_button_wrap{
+  position: relative;
+  top: -106px;
+  width: 403px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.hero_registration_button{
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: #155DFC;
+  padding: 21px 37px 23px 38px;
+  box-shadow: 2px 2px 2px gray;
+  background-color: rgba(255, 255, 255);
+  margin-right: 24px;
+  float: left;
+}
+
+.hero_learnmore_button{
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: #155DFC;
+  padding: 21px 37px 23px 38px;
+  box-shadow: 2px 2px 2px gray;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 1);
+  float: left;
+}
+
+.introduction{
+  position: relative;
+  top: -100px;
+  height: 836px;
+  width: 1216px;
+  margin: 96px auto 0px;
+  padding: 42px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 24px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  // overflow: hidden;
+}
+
+.introduction_wrap{
+  position: relative;
+  top: -180px;
+  height: 636.75px;
+}
+
+.introduction_main{
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  width: 1130px;
+  height: 634.75px;
+}
+
+.introduction_main_bolt_box{
+  // 下三つは突貫工事
+  position: relative;
+  top: 150px;
+  left: 120px;
+  height: 106px;
+  width: 106px;
+  border-radius: 24px;
+  background-color: #ffffff;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  transform: rotate(-4.905deg);
+  margin: 179px 387px;
+  padding: 24px;
+}
+
+.fa-bolt{
+  font-size: 63px;
+  color: #155DFC;
+  transform: rotate(-4.905deg);
+}
+
+.introduction_main_text1{
+  font-size: 36px;
+  text-align: center;
+}
+
+.introduction_main_text2{
+  font-size: 24px;
+  text-align: center;
+}
+
+.introduction_main_logo{
+  font-size: 36px;
+  text-align: center;
+}
+
+.introduction_sub_wrap{
+  padding-top: 24px;
+  overflow: hidden;
+}
+
+.introduction_sub1{
+  height: 94px;
+  width: 366px;
+  border-radius: 14px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.20);
+  float: left;
+  margin-right: 16px;
+  padding: 20px 0px;
+}
+
+.introduction_sub2{
+  height: 94px;
+  width: 366px;
+  border-radius: 14px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.20);
+  float: left;
+  margin-right: 16px;
+  padding: 20px 0px;
+}
+
+.introduction_sub3{
+  height: 94px;
+  width: 366px;
+  border-radius: 14px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.20);
+  float: left;
+  padding: 20px 0px;
+}
+
+.introduction_sub_logo1{
+  color: rgba(238, 255, 6, 0.795);
+  text-align: center;
+}
+
+.introduction_sub_logo2{
+  color: rgba(238, 255, 6, 0.795);
+  text-align: center;
+}
+
+.introduction_sub_logo3{
+  color: rgba(238, 255, 6, 0.795);
+  text-align: center;
+}
+
+.introduction_sub_text1{
+  text-align: center;
+}
+
+.introduction_sub_text2{
+  text-align: center;
+}
+
+.introduction_sub_text3{
+  text-align: center;
+}
+
+// 特徴文その１
+
+.features{
+  // 後で#fffに変更
+  background-color: #ffffff;
+  width: 1905px;
+  height: 472px;
+  overflow: hidden;
+  padding: 126px 0px 98px 0px;
+
+}
+
+.features_main_text{
+  color: #101828;
+   text-align: center;
+   padding-bottom: 54px;
+}
+
+.features_main_text_wrap{
+  height: 172px;
+  width: 1125px;
+  margin: 0 auto;
+}
+
+// 特徴文その二
+.features_sub_wrap{
+  width: 373px;
+  height: 192px;
+  float: left;
+}
+
+.features_sub_wrap{
+  width: 373px;
+  height: 192px;
+}
+
+.features_sub_text_1-1{
+  padding: 10px 130px 10px;
+  font-size: 16px;
+  text-align: center;
+  color: #101828;
+}
+
+.features_sub_text_1-2{
+  text-align: center;
+  color: #101828;
+}
+
+.features_sub_text_1-3{
+  text-align: center;
+  color: #101828;
+}
+
+// 特徴文その３
+
+.features_sub_wrap_2{
+  width: 373px;
+  height: 192px;
+   float: left;
+}
+
+.features_sub_bolt_box{
+  width: 80px;
+  height: 80px;
+  border-radius: 16px;
+  padding: 20px;
+  margin: 0 auto;
+  box-shadow: 2px 2px 2px gray;
+  background: linear-gradient(
+    135deg,
+    #2B7FFF 0%,
+    #155DFC 100%
+  );
+}
+
+.fa-cloud-bolt{
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.features_sub_fa-comment_box{
+  width: 80px;
+  height: 80px;
+  border-radius: 16px;
+  margin: 0 auto;
+  padding: 20px;
+  background: linear-gradient(
+    135deg,
+    #AD46FF 0%,
+    #9810FA 100%
+  );
+}
+
+.fa-comment{
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.features_sub_wrap{
+  width: 373px;
+  height: 192px;
+}
+
+.features_sub_text_2-1{
+  padding: 10px 130px 10px;
+  text-align: center;
+  color: #101828;
+  font-size: 16px;
+}
+
+.features_sub_text_2-2{
+  text-align: center;
+  color: #101828;
+}
+
+.features_sub_text_2-3{
+  text-align: center;
+  color: #101828;
+}
+
+.features_sub_text_2-4{
+  text-align: center;
+  color: #101828;
+}
+
+// 特徴その4
+
+.features_sub_wrap_3{
+  width: 373px;
+  height: 192px;
+  float: left;
+}
+
+.features_sub_bolt_box{
+  width: 80px;
+  height: 80px;
+  border-radius: 16px;
+  padding: 20px;
+  margin: 0 auto;;
+  background: linear-gradient(
+    135deg,
+    #2B7FFF 0%,
+    #155DFC 100%
+  );
+}
+
+.fa-cloud-bolt{
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.features_sub_fa-shield-halved{
+  width: 80px;
+  height: 80px;
+  border-radius: 16px;
+  padding: 20px;
+  margin: 0 auto;
+  background: linear-gradient(
+    135deg,
+    #F6339A 0%,
+    #E60076 100%
+  );
+}
+
+.fa-shield-halved{
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.features_sub_wrap{
+  width: 373px;
+  height: 192px;
+}
+
+.features_sub_text_3-1{
+  padding: 10px 130px 10px;
+  text-align: center;
+  color: #101828;
+}
+
+.features_sub_text_3-2{
+  text-align: center;
+  color: #101828;
+}
+
+.features_sub_text_3-3{
+  text-align: center;
+  color: #101828;
+  font-size: 16px;
+}
+
+.features3{
+  width: 1541px;
+  height: 372px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 96px 10px;
+}
+
+.features3_sub_wrap_3{
+  width: 1580px;
+  height: 180px;
+}
+
+.features3_3-1{
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.features3_3-2{
+  text-align: center;
+  padding: 39px;
+}
+
+.features3_registration_button{
+  background-color: #ffffff;
+  height: 12px;
+  width: 150px;
+  border-radius: 10px;
+  color: #155DFC;
+  padding: 11px 10px 33px 18px;
+  box-shadow: 2px 2px 2px gray;
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+
+// フッター
+.footer{
+  height: 184px;
+  width: 1905px;
+  background-color: #101828;
+}
+
+.footer_main_wrap{
+  position: relative;
+  top: 60px;
+  margin-left: 32px;
+}
+
+.footer_sub_wrap{
+ height: 56px;
+}
+
+.footer_logo{
+  background: linear-gradient(
+    135deg,
+    #155DFC 0%,
+    #9810FA 100%
+  );
+  color: #ffffff;
+  display: block;
+  height: 32px;
+  width: 32px;
+  text-align: center;
+  border-radius: 10px;
+  float: left;
+  padding-top: 5px;
+}
+
+.footer_title{
+  position: relative;
+  top: 5px;
+  margin-left: 5px;
+}
+
+.footer_copy_right{
+  margin-top: 32px;
+}
+
+// .features3_registration_button{
+//   margin: 0 auto;
+// }
+
+
+// .fa-shield-halved{
+//   font-size: 40px;
+//   color: #ffffff;
+// }
+
+// .container {
+//   width: 1000px;
+//   margin: 0 auto;
+
+//   @include respond('lg') {
+//     width: 90%;
+//   }
+
+//   @include respond('md') {
+//     width: 100%;
+//     padding: 0 16px;
+//   }
+// }
