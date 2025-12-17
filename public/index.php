@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<html lang="ja">
-
-<head>
-  <meta charset="utf-8">
-  <title>match</title>
-  <link rel="stylesheet" href="/match/public/css/style.css">
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-  <!-- フォントアイコン -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
+<?php
+$siteTitle = 'HOME';
+require __DIR__ . '/../app/view/layout/head.php';
+?>
 
 <!-- 全体背景色 -->
 
@@ -21,8 +14,14 @@
         <span class="header_title">match</span>
       </div>
       <div class="header_left_wrap">
-        <button class="header_login">ログイン</button>
-        <button class="header_registration">無料で始める</button>
+        <button class="/?header_login">
+          <a href="/login.php">ログイン</a>
+        </button>
+        <button class=" header_registration" href="/signin">
+          <a href="/signin.php">
+            無料で始める
+          </a>
+        </button>
       </div>
     </div>
   </header>
@@ -154,16 +153,9 @@
     </div>
   </section>
 
-  <!-- フッター -->
-  <footer class="footer">
-    <div class="footer_main_wrap">
-      <div class="footer_sub_wrap">
-        <icon class="footer_logo">M</icon>
-        <span class="footer_title">match</span>
-      </div>
-      <div class="footer_copy_right">© 2025 match. All rights reserved</div>
-    </div>
-  </footer>
+  <?php
+  require __DIR__ . '/../app/view/layout/footer.php';
+  ?>
 
 </body>
 
