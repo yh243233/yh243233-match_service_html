@@ -1,0 +1,61 @@
+/* ベーススタイル */
+.background_color {
+  font-family: Arial,system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  max-height: 2660px;
+  /* 背景グラデーション */
+  min-height: 100vh;
+  background: #D1D5DC;
+}
+
+// ヘッダー要素
+.header{
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  &_main_wrap{
+    height: 64px;
+    width: 1216px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &_right_wrap{
+    height: 32px;
+    width: 90px;
+    overflow: hidden;
+    float: left;
+  }
+
+  &_logo{
+    background-color: #ffffff;
+    color: #155DFC;
+    display: block;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    border-radius: 10px;
+    float: left;
+    // 下は応急処置：良い方法が見つかり次第修正
+    padding-top: 3px;
+    padding-right: 1px;
+  }
+  &_title{
+    float: left;
+    // 下は応急処置：良い方法が見つかり次第修正
+    margin-top: 3px;
+    margin-left: 4px;
+  }
+  &._login{
+    margin-right: 8px;
+  }
+  &._registration{
+    background-color: #ffffff;
+    border-radius: 10px;
+    color: #155DFC;
+    padding: 8px 19px;
+  }
+}
+
