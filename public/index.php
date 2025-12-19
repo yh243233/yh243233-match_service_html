@@ -18,7 +18,7 @@ require __DIR__ . '/../app/view/layout/head.php';
           <a href="/login.php">ログイン</a>
         </button>
         <button class=" header_registration" href="/signin">
-          <a href="/signin.php">
+          <a href="/signup.php">
             無料で始める
           </a>
         </button>
