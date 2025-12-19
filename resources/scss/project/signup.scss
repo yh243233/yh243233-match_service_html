@@ -1,7 +1,3 @@
-  // max-height: 2660px;
-  // min-height: 100vh;
-  //  /* 背景グラデーション */
-
 .background {
     &_signup {
       height: 820px;
@@ -135,6 +131,9 @@
   &_login_account{
     width: 310px;
     margin: 0 auto;
+  }
+  &_text{
+    color: #155DFC;
   }
 }
 

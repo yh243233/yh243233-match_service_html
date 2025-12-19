@@ -6,7 +6,11 @@ require __DIR__ . '/../app/view/layout/head.php';
 <body class="background_signup">
   <div class="background_bule_fileter"></div>
   <div class="signup_main_wrap">
-    <div class="signup_top_back">←トップに戻る</div>
+    <div class="signup_top_back">
+      <a href="/">
+        ←トップに戻る
+      </a>
+    </div>
     <div class="signup_frame">
       <div class="signup_element_1">
         <icon class="signup_element_logo">M</icon>
@@ -48,7 +52,7 @@ require __DIR__ . '/../app/view/layout/head.php';
 
       <div class="signup_login_account">
         すでにアカウントをお持ちの方は
-        <a href="#">ログイン</a>
+        <a href="/login.php" class="signup_text">ログイン</a>
       </div>
     </div>
   </div>
