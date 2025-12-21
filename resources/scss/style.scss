@@ -13,7 +13,8 @@
 // ==========================
 // Layout
 // ==========================
-// @use "layout/header";
+@use "layout/_header";
+@use "layout/_profileHeader";
 // @use "layout/footer";
 
 // ==========================
@@ -28,6 +29,8 @@
 
 @use "project/signup";
 @use "project/login";
+@use "project/profile";
+
 
 // ==========================
 // Utility（最後）
@@ -48,67 +51,6 @@
     #9810FA 50%,
     #F6339A 100%
   );
-}
-
-// ヘッダー要素
-.header{
-  background-color: rgba(255, 255, 255, 0.2);
-  display: flex;
-  justify-content: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.header_main_wrap{
-  height: 64px;
-  width: 1216px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.header_right_wrap{
-  height: 32px;
-  width: 90px;
-  overflow: hidden;
-  float: left;
-}
-
-.header_right_wrap{
-  height: 32px;
-  width: 90px;
-  overflow: hidden;
-}
-
-.header_logo{
-  background-color: #ffffff;
-  color: #155DFC;
-  display: block;
-  height: 32px;
-  width: 32px;
-  text-align: center;
-  border-radius: 10px;
-  float: left;
-  // 下は応急処置：良い方法が見つかり次第修正
-  padding-top: 3px;
-  padding-right: 1px;
-}
-
-.header_title{
-  float: left;
-  // 下は応急処置：良い方法が見つかり次第修正
-  margin-top: 3px;
-  margin-left: 4px;
-}
-
-.header_login{
-  margin-right: 8px;
-}
-
-.header_registration{
-  background-color: #ffffff;
-  border-radius: 10px;
-  color: #155DFC;
-  padding: 8px 19px;
 }
 
 // ヒーローバナー
