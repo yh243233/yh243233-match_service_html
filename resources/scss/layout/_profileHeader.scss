@@ -1,15 +1,9 @@
-// 基本ヘッダー要素
-.header{
+// プロフィールヘッダー要素
+.profile_header{
+  background-color: rgba(255, 255, 255, 1);
   display: flex;
   justify-content: center;
-  // memo:ここヘッダー使いまわしだとFigma通りにデザインできないので別案が浮かぶまで一旦保留。
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    background: linear-gradient(
-    135deg,
-    #155DFC 0%,
-    #9810FA 50%,
-    #F6339A 100%
-  );
   &_main_wrap{
   height: 64px;
   width: 1216px;

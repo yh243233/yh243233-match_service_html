@@ -76,6 +76,98 @@ input[type=reset] {
   cursor: pointer;
 }
 
+.header {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(135deg, #155DFC 0%, #9810FA 50%, #F6339A 100%);
+}
+.header_main_wrap {
+  height: 64px;
+  width: 1216px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__right_wrap {
+  height: 32px;
+  width: 90px;
+  overflow: hidden;
+  float: left;
+}
+.header_logo {
+  background-color: #ffffff;
+  color: #155DFC;
+  display: block;
+  height: 32px;
+  width: 32px;
+  text-align: center;
+  border-radius: 10px;
+  float: left;
+  padding-top: 3px;
+  padding-right: 1px;
+}
+.header_title {
+  float: left;
+  margin-top: 3px;
+  margin-left: 4px;
+}
+.header_login {
+  margin-right: 8px;
+}
+.header_registration {
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: #155DFC;
+  padding: 8px 19px;
+}
+
+.profile_header {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.profile_header_main_wrap {
+  height: 64px;
+  width: 1216px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.profile_header__right_wrap {
+  height: 32px;
+  width: 90px;
+  overflow: hidden;
+  float: left;
+}
+.profile_header_logo {
+  background-color: #ffffff;
+  color: #155DFC;
+  display: block;
+  height: 32px;
+  width: 32px;
+  text-align: center;
+  border-radius: 10px;
+  float: left;
+  padding-top: 3px;
+  padding-right: 1px;
+}
+.profile_header_title {
+  float: left;
+  margin-top: 3px;
+  margin-left: 4px;
+}
+.profile_header_login {
+  margin-right: 8px;
+}
+.profile_header_registration {
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: #155DFC;
+  padding: 8px 19px;
+}
+
 .background_signup {
   height: 820px;
   min-height: 100vh;
@@ -364,44 +456,34 @@ input[type=reset] {
 }
 
 /* ベーススタイル */
-.background_color {
+.background_color_profile {
   font-family: Arial, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  color: #ffffff;
   max-height: 2660px;
   /* 背景グラデーション */
   min-height: 100vh;
-  background: linear-gradient(135deg, #155DFC 0%, #9810FA 50%, #F6339A 100%);
+  background: #D1D5DC;
 }
 
-.header {
-  background-color: rgba(255, 255, 255, 0.2);
+次回プロフィールの装飾を行う .header {
+  background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(15, 15, 15, 0.2);
 }
-
-.header_main_wrap {
+次回プロフィールの装飾を行う .header_main_wrap {
   height: 64px;
   width: 1216px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
-.header_right_wrap {
+次回プロフィールの装飾を行う .header_right_wrap {
   height: 32px;
   width: 90px;
   overflow: hidden;
   float: left;
 }
-
-.header_right_wrap {
-  height: 32px;
-  width: 90px;
-  overflow: hidden;
-}
-
-.header_logo {
+次回プロフィールの装飾を行う .header_logo {
   background-color: #ffffff;
   color: #155DFC;
   display: block;
@@ -413,22 +495,29 @@ input[type=reset] {
   padding-top: 3px;
   padding-right: 1px;
 }
-
-.header_title {
+次回プロフィールの装飾を行う .header_title {
   float: left;
   margin-top: 3px;
   margin-left: 4px;
 }
-
-.header_login {
+次回プロフィールの装飾を行う .header._login {
   margin-right: 8px;
 }
-
-.header_registration {
+次回プロフィールの装飾を行う .header._registration {
   background-color: #ffffff;
   border-radius: 10px;
   color: #155DFC;
   padding: 8px 19px;
+}
+
+/* ベーススタイル */
+.background_color {
+  font-family: Arial, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #ffffff;
+  max-height: 2660px;
+  /* 背景グラデーション */
+  min-height: 100vh;
+  background: linear-gradient(135deg, #155DFC 0%, #9810FA 50%, #F6339A 100%);
 }
 
 .hero {
