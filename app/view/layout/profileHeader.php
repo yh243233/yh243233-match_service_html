@@ -1,5 +1,7 @@
  <!-- ヘッダー -->
  <header class="profile_header">
+
+   <!-- 右側ヘッダー -->
    <div class="profile_header_main_wrap">
 
      <div class="profile_header_right_wrap">
@@ -7,6 +9,7 @@
        <span class="profile_header_title">match</span>
      </div>
 
+     <!-- 左側ヘッダー -->
      <div class="profile_header_left_wrap">
 
        <!-- 案件箇所 -->
@@ -17,7 +20,8 @@
        <!-- 案件一覧 -->
        <div class="profile_header_public_message_wrap">
          <div class="profile_header_public_message_icon">
-           <icon>仮</icon>
+           <!-- メッセージアイコン -->
+           <i class="fa-regular fa-message"></i>
          </div>
          <button class="profile_header_public_message">
            <a href="/publicMessage.php">パブリックメッセージ</a>
@@ -27,7 +31,8 @@
        <!-- DM箇所 -->
        <div class="profile_header_dm_wrap">
          <div class="profile_header_dm_icon">
-           <icon>仮</icon>
+           <!-- メールアイコン -->
+           <i class="fa-regular fa-envelope"></i>
          </div>
          <button class="profile_header_dm">
            <a href="/dm.php">DM</a>
@@ -45,8 +50,11 @@
        </div>
 
        <!-- プロフィール編集ボタン -->
-       <button class="profile_header_profile_edit">
-         <a href="/profile_edit.php"></a>
+       <button class="profile_header_profile_icon">
+         <a href="/profile_edit.php">
+           <!-- ユーザーアイコン -->
+           <i class="fa-regular fa-user"></i>
+         </a>
        </button>
 
      </div>
