@@ -12,6 +12,10 @@ require __DIR__ . '/../app/view/layout/head.php';
   require __DIR__ . '/../app/view/layout/profileHeader.php';
   ?>
 
+  <div class~"profile_main">
+
+  </div>
+
 </body>
 
 </html>

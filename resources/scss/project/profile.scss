@@ -10,6 +10,9 @@
   }
 }
 
+// プロフィールの装飾編集をプロジェクトの_profileHeader.scssと
+// _header.scssで混ぜて装飾しているので次回以降気を付ける
+
 // ヘッダー要素
 .profile_header{
   border-bottom: 1px solid rgba(15, 15, 15, 0.2);
@@ -158,4 +161,12 @@
 // プロフィールアイコン
 .fa-user{
   margin: -9px 0 0 2px;
+}
+
+
+次回ここから
+// プロフィールメイン部分
+
+.profile_main_wrap{
+
 }
