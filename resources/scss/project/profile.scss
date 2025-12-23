@@ -10,61 +10,163 @@
   }
 }
 
-次回プロフィールの装飾を行う
+// プロフィールの装飾編集をプロジェクトの_profileHeader.scssと
+// _header.scssで混ぜて装飾しているので次回以降気を付ける
 
 // ヘッダー要素
-.header{
-  background-color: rgba(255, 255, 255, 1);
-  display: flex;
-  justify-content: center;
+.profile_header{
   border-bottom: 1px solid rgba(15, 15, 15, 0.2);
   &_main_wrap{
     height: 64px;
-    width: 1216px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    width: 1416px;
   }
-
+  // 右側ヘッダー
   &_right_wrap{
     height: 32px;
     width: 90px;
     overflow: hidden;
     float: left;
   }
-
-  &_List_of_projects{
-
-  }
-
-  &_logo{
-    background-color: #ffffff;
-    color: #155DFC;
+   &_logo{
+    color: #ffffff;
     display: block;
     height: 32px;
     width: 32px;
     text-align: center;
     border-radius: 10px;
+    padding: 4px 0px;
+    float: left;
+    background: linear-gradient(
+    135deg,
+    #155DFC 0%,
+    #9810FA 50%,
+    #F6339A 100%
+    )
+  }
+   &_title{
     float: left;
     // 下は応急処置：良い方法が見つかり次第修正
-    padding-top: 3px;
-    padding-right: 1px;
-  }
-  &_title{
-    float: left;
-    // 下は応急処置：良い方法が見つかり次第修正
-    margin-top: 3px;
-    margin-left: 4px;
-  }
-  &._login{
-    margin-right: 8px;
-  }
-  &._registration{
-    background-color: #ffffff;
-    border-radius: 10px;
-    color: #155DFC;
-    padding: 8px 19px;
+    margin-top: 5px;
+    margin-left: 8px;
   }
 
+  // 左側ヘッダー
+  &_left_wrap{
+    height: 45px;
+    width: 550px;
+    overflow: hidden;
+  }
+
+  // 案件一覧
+  &_List_of_projects{
+    height: 24px;
+    width: 64px;
+    float: left;
+    margin-top: 10px;
+    margin-right: 24px;
+  }
+
+  // メッセージ
+  &_public_message_wrap{
+    height: 16px;
+    width: 145px;
+    float: left;
+    margin-top: 10px;
+    margin-right: 24px;
+  }
+
+  &_public_message_icon{
+    height: 16px;
+    width: 16px;
+    float: left;
+    margin-right: 10px;
+  }
+
+  &_public_message{
+    height: 24px;
+    width: 117px;
+    float: left;
+  }
+
+  // dm
+  &_dm_wrap{
+    height: 24px;
+    width: 50px;
+    float: left;
+    margin-top: 10px;
+    margin-right: 24px;
+  }
+
+  &_dm_icon{
+    float: left;
+    margin-right: 15px;
+  }
+
+  &_dm{
+    float: left;
+    padding-left: 20px;
+  }
+
+  // 案件投稿
+  &_post_a_job_wrap{
+    color: #ffffff;
+    height: 40px;
+    width: 132px;
+    float: left;
+    margin-right: 24px;
+    padding: 8px 18px;
+    border-radius: 10px;
+    background: linear-gradient(
+    135deg,
+    #155DFC 50%,
+    #9810FA 100%
+  );
+  }
+
+  &_post_a_job_icon{
+    float: left;
+    margin-right: 10px;
+  }
+
+  &_post_a_job{
+    float: left;
+  }
+
+  // プロフィール欄
+  &_profile_icon{
+    margin-top: 6px;
+    padding-top: 2px;
+    padding-left: 7px;
+    height: 32px;
+    width: 32px;
+    border-radius: 10px;
+    background-color: #DBEAFE;
+  }
 }
 
+// アイコン一覧
+
+// メールアイコン
+// フォントの位置が定まらないので後回し
+.fa-envelope{
+  margin-top: 3px;
+}
+
+// メッセージアイコン
+.fa-envelope{
+  margin: 0;
+  float: left;
+}
+
+// プロフィールアイコン
+.fa-user{
+  margin: -9px 0 0 2px;
+}
+
+
+次回ここから
+// プロフィールメイン部分
+
+.profile_main_wrap{
+
+}

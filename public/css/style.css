@@ -464,50 +464,118 @@ input[type=reset] {
   background: #D1D5DC;
 }
 
-次回プロフィールの装飾を行う .header {
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  justify-content: center;
+.profile_header {
   border-bottom: 1px solid rgba(15, 15, 15, 0.2);
 }
-次回プロフィールの装飾を行う .header_main_wrap {
+.profile_header_main_wrap {
   height: 64px;
-  width: 1216px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  width: 1416px;
 }
-次回プロフィールの装飾を行う .header_right_wrap {
+.profile_header_right_wrap {
   height: 32px;
   width: 90px;
   overflow: hidden;
   float: left;
 }
-次回プロフィールの装飾を行う .header_logo {
-  background-color: #ffffff;
-  color: #155DFC;
+.profile_header_logo {
+  color: #ffffff;
   display: block;
   height: 32px;
   width: 32px;
   text-align: center;
   border-radius: 10px;
+  padding: 4px 0px;
   float: left;
-  padding-top: 3px;
-  padding-right: 1px;
+  background: linear-gradient(135deg, #155DFC 0%, #9810FA 50%, #F6339A 100%);
 }
-次回プロフィールの装飾を行う .header_title {
+.profile_header_title {
   float: left;
-  margin-top: 3px;
-  margin-left: 4px;
+  margin-top: 5px;
+  margin-left: 8px;
 }
-次回プロフィールの装飾を行う .header._login {
-  margin-right: 8px;
+.profile_header_left_wrap {
+  height: 45px;
+  width: 550px;
+  overflow: hidden;
 }
-次回プロフィールの装飾を行う .header._registration {
-  background-color: #ffffff;
+.profile_header_List_of_projects {
+  height: 24px;
+  width: 64px;
+  float: left;
+  margin-top: 10px;
+  margin-right: 24px;
+}
+.profile_header_public_message_wrap {
+  height: 16px;
+  width: 145px;
+  float: left;
+  margin-top: 10px;
+  margin-right: 24px;
+}
+.profile_header_public_message_icon {
+  height: 16px;
+  width: 16px;
+  float: left;
+  margin-right: 10px;
+}
+.profile_header_public_message {
+  height: 24px;
+  width: 117px;
+  float: left;
+}
+.profile_header_dm_wrap {
+  height: 24px;
+  width: 50px;
+  float: left;
+  margin-top: 10px;
+  margin-right: 24px;
+}
+.profile_header_dm_icon {
+  float: left;
+  margin-right: 15px;
+}
+.profile_header_dm {
+  float: left;
+  padding-left: 20px;
+}
+.profile_header_post_a_job_wrap {
+  color: #ffffff;
+  height: 40px;
+  width: 132px;
+  float: left;
+  margin-right: 24px;
+  padding: 8px 18px;
   border-radius: 10px;
-  color: #155DFC;
-  padding: 8px 19px;
+  background: linear-gradient(135deg, #155DFC 50%, #9810FA 100%);
+}
+.profile_header_post_a_job_icon {
+  float: left;
+  margin-right: 10px;
+}
+.profile_header_post_a_job {
+  float: left;
+}
+.profile_header_profile_icon {
+  margin-top: 6px;
+  padding-top: 2px;
+  padding-left: 7px;
+  height: 32px;
+  width: 32px;
+  border-radius: 10px;
+  background-color: #DBEAFE;
+}
+
+.fa-envelope {
+  margin-top: 3px;
+}
+
+.fa-envelope {
+  margin: 0;
+  float: left;
+}
+
+.fa-user {
+  margin: -9px 0 0 2px;
 }
 
 /* ベーススタイル */
