@@ -167,6 +167,83 @@
 
 // プロフィールメイン部分
 
-// .profile_main_wrap{
+.profile_main{
+  height: 748px;
+  width: 704px;
+  padding: 33px;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.10);
+  font-family: Arial;
+  font-size: 16px;
+  font-style: normal;
+  // この辺り順序がぐちゃぐちゃしている
+  &_mypage_back{
+    color: #4A5565;
+    margin-bottom: 20px;
+  }
+  &_wrap{
+    height: 860px;
+    width: 768px;
+    padding: 24px;
+    margin: 0 auto;
+  }
+  // プロフィール編集先頭テキスト
+  &_edit_text{
+    margin-bottom: 32px;
+  }
+  &_icon_text{
+    margin-bottom: 16px;
+  }
+  // アイコン画面編集箇所
+  &_icon_image_wrap{
+    height: 96px;
+    width: 638px;
+  }
+  &_icon_main_wrap{
+    height: 96px;
+    width: 96px;
+    // overflow: hidden;
+    position: relative;
+  }
+  &_icon_main{
+    height: 96px;
+    width: 96px;
+    border-radius: 33px;
+    background-color: #DBEAFE;
+  }
+  &_icon_sub{
+    height: 36px;
+    width: 36px;
+    position: absolute;
+    top: 55px;
+    left: 65px;
+    border-radius: 33px;
+    padding: 10px 8px;
+    background: linear-gradient(
+    135deg,
+    #155DFC 0%,
+    #9810FA 100%
+  );
+  &_icon_decoration{
+    font-size: 16px;
+  }
+  }
+}
 
-// }
+// アイコン群
+// ユーザーアイコン
+.fa-user.profile{
+ font-size: 48px;
+ padding: 30px 24px 0;
+ color: #155DFC;
+}
+
+// カメラアイコン
+.fa-camera.profile{
+ font-size: 16px;
+ color: #ffffff;
+ margin-left: 2px;
+}
+
+次回説明文の箇所を整える
