@@ -205,6 +205,7 @@
     width: 96px;
     // overflow: hidden;
     position: relative;
+    float: left;
   }
   &_icon_main{
     height: 96px;
@@ -229,6 +230,26 @@
     font-size: 16px;
   }
   }
+  &_transfer_jpg_png_text_wrap{
+    height: 96px;
+    width: 542px;
+    float: left;
+    padding: 24px;
+    margin-bottom: 32px;
+  }
+  &_transfer_images{
+    height: 24px;
+    width: 542px;
+    float: left;
+    margin-bottom: 4px;
+    color: #155DFC;
+  }
+  &_jpg_png_text{
+    height: 20px;
+    width: 542px;
+    float: left;
+    color: #6A7282;
+  }
 }
 
 // アイコン群
@@ -245,5 +266,3 @@
  color: #ffffff;
  margin-left: 2px;
 }
-
-次回説明文の箇所を整える

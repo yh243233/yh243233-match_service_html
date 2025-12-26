@@ -38,10 +38,14 @@ require __DIR__ . '/../app/view/layout/head.php';
 
         </div>
         <!-- 画像説明文 -->
-        <div class="profile_main_transfer_images">画像を転送</div>
-        <div>JPG、PNG形式（最大5MB）</div>
+        <div class="profile_main_transfer_jpg_png_text_wrap">
+          <div class="profile_main_transfer_images">画像を変更</div>
+          <div class="profile_main_jpg_png_text">JPG、PNG形式（最大5MB）</div>
+        </div>
 
       </div>
+
+      次回名前欄の編集から
 
       <!-- 名前編集箇所 -->
       <div class="profile_main_name_edit_text">
